@@ -1,0 +1,389 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(183, 235, 235);
+}
+.header-container{
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.logo img{
+    margin-left: 30px;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.nav-heading {
+    display: flex;
+    justify-content: space-around;
+    margin: 39px;
+    gap: 50px;
+    list-style: none;
+    cursor: pointer;
+}
+
+@media (max-width : 768px) {
+    .header-container {
+        display: flex;
+    }
+}
+
+.library-image {
+    display: flex;
+    width: 100%;
+}
+
+.library-image img {
+    width: 99.9%;
+    height: 500px;
+}
+
+@media (max-width : 480px){
+
+.library-image {
+    /* display: flex; */
+    width: 479px;
+
+}
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.categories-card {
+    margin: 10px;
+    text-align: center;
+}
+.categories-card img {
+    display: flex;
+    justify-content: center;   
+}
+
+.categories-card h2 {
+    margin: 10px auto;
+}
+
+.message {
+    margin: 20px;
+    text-align: center;
+}
+
+.view-details {
+    cursor: pointer;
+    /* color:blue; */
+    font-size: 20px;
+    padding: 5px;
+    border: 0.2 solid black;
+
+    text-decoration: none;
+    transition: 1s all;
+}
+
+.view-details:hover {
+    transform: scale(1.05);
+    color: rgb(135, 123, 238);
+}
+
+
+@media (max-width:480px) {
+   .categories-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left:50px;
+   }
+   .categories-card{
+    flex-wrap: nowrap;
+   }
+}
+@media (max-width:1024px) {
+   .categories-card {
+    margin: 15px 30px;
+   }
+}
+
+/* -------------search-section----------- */
+.search-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-section input {
+    display: flex;
+    max-width: 500px;
+    text-align: center;
+    background-color: #e7eee9;
+    
+    /* display: none; */
+}
+
+/* ----------browsebook-section-------- */
+
+.browsebook-container {
+    width: 100%;
+    position: relative;
+}
+
+.categories-select {
+    position: absolute;
+    max-width: 90px;
+    right: 30px;
+}
+
+.browsebook-section {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.browsebook {
+    margin: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.browsebook h3 {
+    margin: 10px 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    text-decoration-line: none;
+}
+
+.browsebook p {
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+}
+
+/* -----------book Details ------------ */
+
+.backbutton {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.book-details {
+    width: 100%;
+    display: flex;
+}
+
+.book-img img{
+    margin-top: 35px;
+    margin-left: 30px;
+    display: flex;
+    width: 400px;
+    height:550px;
+}
+
+.book-info {
+    text-align: center;
+    margin: 90px 150px;
+}
+
+.book-details h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.book-details h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.book-details h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.book-details h5 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.book-details p {
+    font-size: 40px;
+}
+
+@media(max-width: 768px) {
+    .bookdetails-container {
+        width: 100%;
+    }
+    .book-details {
+        /* flex-direction: column; */
+        width: 60%;
+        /* flex-wrap: wrap; */
+    }
+    .book-info {
+    margin: 50px 30px;
+    }
+    .book-details img {
+        width: 250px;
+        height: 500px;
+    }
+}
+
+/* --------categoriesbook-section---------- */
+/* Categories Book Container */
+.categoriesbook-container {
+    padding: 2px;
+    width: 100%;
+}
+
+/* Back to Home Button */
+.backtoHome-btn {
+    /* display: inline-block; */
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.backtoHome-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Category Title */
+.categories-name {
+    margin-top: 30px;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+/* Categories List */
+.categories-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+}
+
+.categoriesbook-card{
+    margin-right:30px;
+}
+
+.categoriesbook-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Title */
+.categoriesbook-card li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 180px;
+}
+
+/* Book Image */
+.categoriesbook-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories-data {
+        justify-content: center;
+    }
+
+    .categoriesbook-card {
+        width: 180px;
+        margin: 10px;
+    }
+
+    .categories-name {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories-name {
+        font-size: 1.5rem;
+    }
+
+    .categoriesbook-card {
+        width: 150px;
+    }
+
+    .categoriesbook-card li {
+        font-size: 1rem;
+    }
+
+    .backtoHome-btn {
+        font-size: 0.9rem;
+    }
+}
+
+.add-book-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .image-input {
+    border-color: #007bff; /* Custom border color */
+    background-color: #f0f8ff; /* Light blue background */
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
