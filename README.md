@@ -1,6 +1,6 @@
 # libraryReact
 
-1. Clone the remote repository in your local storage.
-2. navigate to the "libraryReact" folder within git folder in terminal.
-3. Run the command npm install
-4. Run the command npm run dev.
+1. Run the command npm install
+2. Run the command npm run dev.
+
+git link ---- https://github.com/Dharmesh-Internshala/LibrarySystemReact.git
